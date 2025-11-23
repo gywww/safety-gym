@@ -11,10 +11,10 @@ setup(
     name='safety_gym',
     packages=['safety_gym'],
     install_requires=[
-        'gym~=0.15.3',
-        'joblib~=0.14.0',
-        'mujoco_py==2.0.2.7',
-        'numpy~=1.17.4',
-        'xmltodict~=0.12.0',
+        'gym',             # 去掉版本号
+        'joblib',          # (可选) 建议也去掉，以防万一
+        'mujoco_py',       # (可选) 如果你有特定版本需求就不动它
+        'numpy',           # 去掉版本号！这是最关键的
+        'xmltodict',
     ],
 )
